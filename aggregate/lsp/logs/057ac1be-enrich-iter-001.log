@@ -1,0 +1,48 @@
+[2026-04-10T00:05:24Z] === ENRICH ITERATION 1 START | repo=TypeStrong/ts-node sha=057ac1be ===
+[2026-04-10T00:05:24Z] [iter=1] PHASE START: enrich repo=TypeStrong/ts-node sha=057ac1be runlog=/home/runner/work/forx/forx/storage/aggregate/lsp/logs/057ac1be-enrich-iter-001.log output=/home/runner/work/forx/forx/storage/aggregate/lsp/057ac1beb118f9c42d21e876a17320ad73ea6be2.nq.gz
+[2026-04-10T00:05:56Z] [iter=1] Step 1: Loading AST into disk-backed store mem_mb=80 MB
+[2026-04-10T00:06:02Z] [iter=1] AST store loaded triples=815975 load_secs=5 mem_mb=823 MB
+[2026-04-10T00:06:02Z] [iter=1] Step 2: Finding LSP targets mem_mb=823 MB
+[2026-04-10T00:06:02Z] [iter=1] LSP targets found call_sites=6779 imports=341 extends=12 implements=0 secs=0
+[2026-04-10T00:06:02Z] [iter=1] Step 2.7: Building position index (one-shot, shared across resolvers) mem_mb=823 MB
+[2026-04-10T00:06:07Z] [iter=1] Position index built positions=58050 nodes_with_types=67072 secs=4 mem_mb=823 MB
+[2026-04-10T00:06:07Z] [iter=1] Step 3: Starting LSP resolution mem_mb=823 MB already_completed_types=[] already_completed_files=0
+[2026-04-10T00:06:07Z] [iter=1] Resolving target type target_type=call_site count=6779
+[2026-04-10T00:06:07Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=0.7 files_done=0 resolved=0 errors=0 current=src/test/repl/repl-environment.spec.ts
+[2026-04-10T00:06:56Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=1.5 files_done=1 resolved=2 errors=152 current=tests/hello-world.ts
+[2026-04-10T00:07:46Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=2.4 files_done=4 resolved=14 errors=309 current=tests/working-dir/forking/index.ts
+[2026-04-10T00:08:44Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=3.3 files_done=7 resolved=20 errors=493 current=src/test/index.spec.ts
+[2026-04-10T00:12:03Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=6.6 files_done=8 resolved=34 errors=1133 current=src/index.ts
+[2026-04-10T00:13:16Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=7.9 files_done=9 resolved=55 errors=1367 current=src/bin.ts
+[2026-04-10T00:14:53Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=9.5 files_done=11 resolved=72 errors=1673 current=src/test/register.spec.ts
+[2026-04-10T00:15:43Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=10.3 files_done=13 resolved=72 errors=1832 current=src/test/module-node/1778.spec.ts
+[2026-04-10T00:17:14Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=11.8 files_done=15 resolved=73 errors=2122 current=src/test/testlib.ts
+[2026-04-10T00:17:45Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=12.3 files_done=19 resolved=82 errors=2220 current=src/test/pluggable-dep-resolution.spec.ts
+[2026-04-10T00:18:20Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=12.9 files_done=25 resolved=83 errors=2328 current=src/test/transpilers.spec.ts
+[2026-04-10T00:18:55Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=13.5 files_done=29 resolved=86 errors=2437 current=src/test/repl/helpers.ts
+[2026-04-10T00:19:28Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=14.1 files_done=40 resolved=103 errors=2534 current=src/child/child-entrypoint.ts
+[2026-04-10T00:20:05Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=14.7 files_done=50 resolved=110 errors=2648 current=tests/from-node-modules/from-node-modules.ts
+[2026-04-10T00:20:35Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=15.2 files_done=88 resolved=160 errors=2727 current=tests/1778/index.ts
+[2026-04-10T00:21:36Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=16.2 files_done=102 resolved=171 errors=2909 current=raw/node-internal-modules-esm-resolve-v13.12.0.js
+[2026-04-10T00:22:17Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=16.9 files_done=103 resolved=171 errors=3042 current=raw/node-internal-errors-b533fb3508009e5f567cc776daba8fbf665386a6.js
+[2026-04-10T00:24:07Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=18.7 files_done=104 resolved=184 errors=3397 current=tests/module-types/override-to-cjs/test.cjs
+[2026-04-10T00:25:34Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=20.2 files_done=106 resolved=189 errors=3669 current=raw/node-internal-modules-cjs-loader-v17.0.1-stripped.js
+[2026-04-10T00:26:07Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=20.7 files_done=107 resolved=189 errors=3775 current=raw/node-internal-errors-2d5d77306f6dff9110c1f77fefab25f973415770.js
+[2026-04-10T00:27:57Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=22.5 files_done=108 resolved=202 errors=4128 current=raw/node-internal-modules-esm-resolve-v15.3.0.js
+[2026-04-10T00:28:53Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=23.5 files_done=109 resolved=203 errors=4307 current=raw/node-internal-modules-cjs-helpers-v17.0.1.js
+[2026-04-10T00:29:34Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=24.2 files_done=112 resolved=207 errors=4440 current=raw/node-internal-modules-cjs-loader-v15.3.0.js
+[2026-04-10T00:30:51Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=25.4 files_done=113 resolved=208 errors=4689 current=dist-raw/node-internal-modules-cjs-helpers.js
+[2026-04-10T00:31:57Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=26.5 files_done=116 resolved=210 errors=4899 current=raw/node-internal-modules-esm-get_format-v15.3.0.js
+[2026-04-10T00:33:19Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=27.9 files_done=118 resolved=211 errors=5163 current=child-loader.mjs
+[2026-04-10T00:33:56Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=28.5 files_done=120 resolved=212 errors=5283 current=dist-raw/node-internal-modules-esm-get_format.js
+[2026-04-10T00:34:27Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=29.0 files_done=125 resolved=215 errors=5378 current=ava.config.cjs
+[2026-04-10T00:35:00Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=29.6 files_done=134 resolved=239 errors=5481 current=website/src/pages/index.js
+[2026-04-10T00:35:25Z] [iter=1] Target type resolved target_type=call_site resolved=262 errors=5539 secs=1759 mem_mb=823 MB
+[2026-04-10T00:35:25Z] [iter=1] Resolving target type target_type=import_statement count=341
+[2026-04-10T00:35:30Z] [iter=1] HEARTBEAT target_type=import_statement elapsed_min=30.1 files_done=46 resolved=126 errors=0 current=src/child/argv-payload.ts
+[2026-04-10T00:35:32Z] [iter=1] Target type resolved target_type=import_statement resolved=169 errors=0 secs=7 mem_mb=823 MB
+[2026-04-10T00:35:32Z] [iter=1] Resolving target type target_type=extends_clause count=12
+[2026-04-10T00:35:36Z] [iter=1] Target type resolved target_type=extends_clause resolved=11 errors=0 secs=4 mem_mb=823 MB
+[2026-04-10T00:35:43Z] [iter=1] Step 5: Writing final enrichment file triples=65620
+[2026-04-10T00:35:44Z] [iter=1] Enrichment file written path=/home/runner/work/forx/forx/storage/aggregate/lsp/057ac1beb118f9c42d21e876a17320ad73ea6be2.nq.gz size_kb=1407
+[2026-04-10T00:35:44Z] [iter=1] PHASE END: enrich elapsed_s=1820 elapsed_min=30.3 total_triples=65620
